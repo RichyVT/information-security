@@ -57,7 +57,7 @@ Refers to an even more detailed explanation of how a technique is used, variatio
 
 -Procedure     
 Refers to the “what” and describes the details of a strategy of a technique (or sub-technique) by an attacker against their target, explaining the tools and steps used in a particular attack.     
-ATP3 is a Chinese based threat group that uses various strategies, but one of them related to brute force and password cracking, is brute forcing password hashes to be able to leverage plan text credentials.     
+ATP3 is a Chinese based threat group that uses various strategies, but one of them related to brute force and password cracking, is brute forcing password hashes to be able to leverage plain text credentials.     
 Pony is a malware that steals credentials, using a small dictionary of common passwords against a collected list of local accounts.    
 
 
