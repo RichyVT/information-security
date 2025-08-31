@@ -6,7 +6,7 @@
 
 The document introduces a cyber security concept call “Intelligence-Driven Computer Network Defense” which is aimed at helping organizations protect themselves against sophisticated cyber-attacks from potential attackers (hackers).  
 -  Traditional cyber security tends to be reactionary rather than preventative, fixing any vulnerabilities after an attack has already taken place or succeeded, and the document discusses a different kind of threat which it refers to as “Advanced Persistent Threat” (APT).  
--  These attacks are carried out by highly skilled, organized and well-funded who conduct long-term attacks which can last several years to gain access to the system and steal sensitive information.  
+-  These attacks are carried out by highly skilled, organized and well-funded attackers who conduct long-term attacks which can last several years to gain access to the system and steal sensitive information.  
 -  The attackers are persistent in the sense that they do not give up after one failed attempt, they will try to achieve their goal by using different approaches until successful.  
 -  It introduces a cyber-attack concept called the “Cyber Kill Chain” which is a chain of seven sequential steps that attackers must complete to be successful.
     
@@ -52,7 +52,7 @@ One technique is “Brute Force” which is a technique of attempting to gain ac
 
 -Sub-technique     
 Refers to an even more detailed explanation of how a technique is used, variations or specific methods used.     
-“Password Guessing” is a sub-technique of “Brute force” which involves guessing the password of a target based on common patterns, dictionary words, or personal information about the target (collected from a website or social media), and is more successful when the password is weak or the target uses the same password across multiple accounts or different websites.
+“Password Guessing” is a sub-technique of “Brute force” which involves guessing the password of a target based on common patterns, dictionary words, or personal information about the target (collected from a website or social media), and is more successful when the password is weak or the target uses the same password across multiple accounts or different websites.     
 “Password cracking” is another sub-technique which involved using a specialized tool to systematically test password combinations against captured password hashes (which are the algorithms used to encrypt plain text passwords, called a cipher).   
 
 -Procedure     
