@@ -43,11 +43,11 @@ My understanding of the information given in the document is that by better unde
 ## a)
 
 -Tactic    
-Refers to the “why” of an attacker’s action, such and their objective or tactical goal.       
+Refers to the “why” of an attacker’s actions, such and their objective or tactical goal.       
 One such tactic is “Credential Access”, which is when attackers try to steal account names and their passwords to gain access to a system.  By using legitimate credentials, the attack is harder to detect and gives the attackers more freedom within the system.  I picked this tactic because I think this is the most common method that most ordinary people think of when they consider what “hacking” is, having controlling access to someone else’s account.
 
 -Technique     
-Refers the “how”, the method an attacker uses to achieve their objective or goal.     
+Refers to the “how” and explains the method an attacker uses to achieve their objective or goal.     
 One technique is “Brute Force” which is a technique of attempting to gain access of accounts through repeated login attempts using different password combinations.  
 
 -Sub-technique     
