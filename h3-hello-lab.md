@@ -131,17 +131,6 @@ We find this password by using traversal, first we change directory to find the 
 I found doing the overthewire:bandit excercises very interesting and quite complicated, but it was a new experience for me and I learned lots of new things about Linux, and will probably continue with the rest of the levels during my free time in the future.
 
 ## Sources:
-https://mayadevbe.me/posts/overthewire/bandit/level2/
-https://www.reddit.com/r/HowToHack/comments/lw5g90/noob_having_constant_permission_denied_error_on/
-https://dev.to/xploitcore/detailed-guide-to-mastering-overthewire-bandit-game-1dac
-
-
-
-
-
-
-
-
-
-
-
+https://mayadevbe.me/posts/overthewire/bandit/level2/     
+https://www.reddit.com/r/HowToHack/comments/lw5g90/noob_having_constant_permission_denied_error_on/    
+https://dev.to/xploitcore/detailed-guide-to-mastering-overthewire-bandit-game-1dac    
