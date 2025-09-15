@@ -153,6 +153,27 @@ I find it very interesting that this is still an issue after being a known probl
 
 <img width="1162" height="402" alt="{C25A49B9-A2F3-4940-94FA-016052701A5D}" src="https://github.com/user-attachments/assets/e3e7750a-4e62-4ad7-b2d6-bfbe8c69c28b" />     
 
+#  e) Solve Portswigger Labs: Lab: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data. Explain how and why! How can you find the vulnerabitiy? What each part of the exploit does?    
+
+-  Credit goes to the youtube video (listed in sources) that had a really good explanation for what had to be done in order to "solve" the lab
+
+### How to find the vulnerability   
+-  Looked for URL parameters.  When clicking on the "gifts" page, the end of the URL shows ?category=Gifts which suggests uder input goes into a database query
+-  The application probably uses a SQL similar to "SELECT (*) FROM Products WHERE category = 'Gifts'; which lists all the rows from the product table which are categorized as gifts.
+
+### How to the attack works
+-  Original query: SELECT * FROM products WHERE category = 'Gifts' AND released = 1
+-  Added input: ' OR 1=1--
+-  New query: SELECT * FROM products WHERE category = '' OR 1=1-- AND released = 1
+-  The ' (single quote) closes the original string in the SQL query so instead of gifts, the category = ' ' (which is nothing)
+-  The OR 1=1 creates a condition that is always true, a one equals one is always true
+-  This makes the database return all products instead of just one category
+-  So the executed command is "show me products where the category is empty OR 1=1"
+-  Everything after the -- (double dash) gets ignored by the database
+
+### Why it works
+-  There is no input validation which means the application will trust whatever we type and put it into the SQL query.
+-  So by modifying the URL from "?category=Gifts" to "?category=' OR 1=1--" and pressing enter, we can now see all the products, including hidden ones.
 
 <img width="626" height="28" alt="{C3EF6339-069A-413D-9EDA-2940425145F3}" src="https://github.com/user-attachments/assets/5012eea5-4b6b-4cc0-ab70-ea97dbe9926d" />    
 
