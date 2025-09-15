@@ -154,7 +154,9 @@ I find it very interesting that this is still an issue after being a known probl
 <img width="1162" height="402" alt="{C25A49B9-A2F3-4940-94FA-016052701A5D}" src="https://github.com/user-attachments/assets/e3e7750a-4e62-4ad7-b2d6-bfbe8c69c28b" />     
 
 
+<img width="626" height="28" alt="{C3EF6339-069A-413D-9EDA-2940425145F3}" src="https://github.com/user-attachments/assets/5012eea5-4b6b-4cc0-ab70-ea97dbe9926d" />    
 
+<img width="1168" height="580" alt="{907D45A5-C13E-4019-B27C-61ACD5D8DEFB}" src="https://github.com/user-attachments/assets/56fd4ae3-81f0-43b8-aea7-e66671006816" />
 
 
 
@@ -171,7 +173,7 @@ https://owasp.org/Top10/A03_2021-Injection/
 https://en.wikipedia.org/wiki/OWASP    
 https://www.akamai.com/glossary/what-is-owasp    
 https://www.blackduck.com/glossary/what-is-owasp-top-10.html    
-
+https://www.youtube.com/watch?v=X1X1UdaC_90  - Help with the portswigger excercise
 
 
 
