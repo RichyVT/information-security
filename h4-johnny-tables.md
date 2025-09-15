@@ -111,7 +111,54 @@ Software development has become incredibly productive by letting developers asse
 -  Caution with ORMs: Even parameterized stored procedures can be vulnerable
 
 ### Personal observation
-I find it very interesting that this is still an issue after being a known problem for a such a long time.
+I find it very interesting that this is still an issue after being a known problem for a such a long time.   
+
+## Munroe: xkcd 327: Exploits of a Mom
+-  The comic is about the cybersecurity vulnerability known as SQL injection, where malicious code gets executed when user input isn't properly sanitized
+-  The SQL input Robert');DROP TABLE Student;-- (which is the son's name) is a command that would delete the entire table containing all the student records
+-  When the school inputs the childs name in their database (assuming it is a SQL database) they would have unknowingly executed this command
+- "Sanitize your data inputs" refers to cleaning and validating any data entered by a user before using it in a database query
+
+#  d) Sequel. Solve SQLZoo:   
+
+## 0 SELECT basics     
+-  1 . We need to change the query from "WHERE name = 'France'" to "WHERE name = 'Germany'" to show the population of Germany:              
+
+<img width="1161" height="402" alt="{76A0C963-EB8C-4B2A-BE74-6588C1BF2ED7}" src="https://github.com/user-attachments/assets/cf76adc5-ae38-4448-aa4a-8122416b0959" />            
+
+-  2 . We need to change the countries in the query "WHERE name IN ('Brazil', 'Russia', 'India', 'China');" to 'Sweden', 'Norway', 'Denmark' to show their names and populations:       
+
+<img width="1166" height="451" alt="{85E3688C-7321-4A11-8847-186485BF090B}" src="https://github.com/user-attachments/assets/4ce2e9af-8d21-4e18-ad95-40f7f9190543" />         
+
+
+-  3. We need to change the values in the query from "250000 AND 300000" to "200000 AND 250000"       
+
+<img width="1175" height="441" alt="{7847B467-5FDE-44BA-9B5F-2187EC03A2EC}" src="https://github.com/user-attachments/assets/12265933-4408-44f8-8db1-976001f3c190" />        
+
+-  Quiz     
+
+<img width="1209" height="143" alt="{98559E74-9F12-45C5-AC29-2737A0E7834E}" src="https://github.com/user-attachments/assets/f0d6057a-ad02-47dd-b687-cbed0f79e9b8" />       
+
+## 2 SELECT from World: First two subtasks: "1. You can use WHERE..." and "2. Find the countries...".
+
+-  1 . The query "SELECT name, continent, population FROM world" lists the name of the country, name of the continent of said country, and its population from a table called world, and produces a table/list of the selected information.
+
+  <img width="1165" height="404" alt="{4B28F8C4-B232-4FA6-BD9A-4DAD889AA892}" src="https://github.com/user-attachments/assets/e6479545-eb41-42d9-8766-9faf3f1e508a" />
+
+-  2 . The query "SELECT name FROM world WHERE population >= 200000000" lists the name of the countries from a table called world where the population is equal to or greater than 200 million, and produces a table/list of the results.    
+
+<img width="1168" height="409" alt="{C31EB60C-13CA-4EFB-99C2-84648AEE89E0}" src="https://github.com/user-attachments/assets/4b461c15-df12-4ed8-8e38-6f4773f071be" />      
+
+- 3 . The query "SELECT name, gdp/population FROM world WHERE population > 200000000;" lists the name of the countries and the gdp/population from the table called world where the population is at least 200 million
+
+<img width="1162" height="402" alt="{C25A49B9-A2F3-4940-94FA-016052701A5D}" src="https://github.com/user-attachments/assets/e3e7750a-4e62-4ad7-b2d6-bfbe8c69c28b" />     
+
+
+
+
+
+
+
 
 
 
