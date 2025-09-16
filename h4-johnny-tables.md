@@ -119,7 +119,41 @@ I find it very interesting that this is still an issue after being a known probl
 -  When the school inputs the childs name in their database (assuming it is a SQL database) they would have unknowingly executed this command
 - "Sanitize your data inputs" refers to cleaning and validating any data entered by a user before using it in a database query
 
-#  d) Sequel. Solve SQLZoo:   
+#  a) Goat. Install WebGoat 2023.4.    
+
+-  Used the following commands in the Linux terminal 
+$ sudo apt-get update
+$ sudo apt-get install openjdk-21-jre
+$ sudo apt-get install ufw
+$ sudo ufw enable
+$ wget https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar
+$ java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.4.jar
+-  Now it is successfully installed
+
+
+<img width="1922" height="910" alt="image" src="https://github.com/user-attachments/assets/b6d79afb-75db-43ab-ad55-5f9962ea2cb1" />    
+
+#  b) F12. Solve Webgoat 2023.4: General: Developer tools.    
+-  The first task requires you to open the console and add input: webgoat.customjs.phoneHome().
+-  This gave me a phone number that I had to copy and paste in the text box, the answer was correct
+
+<img width="1656" height="484" alt="image" src="https://github.com/user-attachments/assets/d3ba47f8-9876-44a9-9eb0-ba9fbe82919c" />
+
+-  Using the network tab, after clicking the button on the WebGoat page, a new HTTP request appears in the network tab
+-  Then checked the request tab, and the NetworkNum appeared.  Then proceeded to copy/paste it into Webgoat and the answer was correct   
+ 
+<img width="1660" height="455" alt="image" src="https://github.com/user-attachments/assets/763e1de4-1739-4b1a-8def-26595e6fbefe" />     
+
+
+
+#  c) Not outdated. Update all operating system and all applications in your Linux.    
+
+-  Ran the $ sudo apt update && sudo apt upgrade -y command in the terminal on the Linux system
+
+<img width="827" height="519" alt="image" src="https://github.com/user-attachments/assets/9f7ca3d4-f2f8-4d2c-8115-e5d04c785734" />
+
+
+#  d) Sequel. Solve SQLZoo:      
 
 ## 0 SELECT basics     
 -  1 . We need to change the query from "WHERE name = 'France'" to "WHERE name = 'Germany'" to show the population of Germany:              
