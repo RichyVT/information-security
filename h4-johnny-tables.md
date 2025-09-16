@@ -174,6 +174,7 @@ I find it very interesting that this is still an issue after being a known probl
 ### Why it works
 -  There is no input validation which means the application will trust whatever we type and put it into the SQL query.
 -  So by modifying the URL from "?category=Gifts" to "?category=' OR 1=1--" and pressing enter, we can now see all the products, including hidden ones.
+-  So similarly to the Xkcd 327: Exploits of a Mom comic, the application uses SQL queries to retrieve product information from a database, without proper sanitization and does not properly validate user input before executing the queries, leaving it vulnerable to SQL injection.
 
 <img width="626" height="28" alt="{C3EF6339-069A-413D-9EDA-2940425145F3}" src="https://github.com/user-attachments/assets/5012eea5-4b6b-4cc0-ab70-ea97dbe9926d" />    
 
