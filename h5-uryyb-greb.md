@@ -60,3 +60,8 @@ $ gpg --gen-key
 -  If you want to communicate securely with another person, you have to provide them with your public key and they must also generate their own keypair
 -  After verifying the intended targets key (establishing trust) it is possible for both people to communicate securely even when sent over untrusted or hostile network, such as the internet by encrypting the message at the senders end of communication, and then decrypting at the recievers end using the generated keypairs
 -  Attackers can't read the encrypted messages, and the messages are signed by the sender to verify and make sure the attackers cannot impersonate your contacts
+
+
+## Sources
+https://mrajacse.wordpress.com/wp-content/uploads/2012/01/applied-cryptography-2nd-ed-b-schneier.pdf            
+
