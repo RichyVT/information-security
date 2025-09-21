@@ -37,7 +37,7 @@ Different algorithms offer different degrees of security, if the cost to break i
 -  Substitution ciphers (where each character in the plaintext is substituted for another character in the ciphertext) are vulnerable because they keep the letter frequencies
 -  Transposition ciphers (where the plaintext remains the same but the order of characters is shuffled around) are vulnerable because they keep the same letters
 -  XOR encryption repeats patterns that can be detected
--  One-time pads (where every possible plaintext is equally likely given any ciphertext) are the better option but require truly random keys as long as the message itself and the keys are never reused, but is best used only for low-volume communications.
+-  One-time pads (where every possible plaintext is equally likely given any ciphertext) are the better option but has significant practical challenges, require truly random keys as long as the message itself and the keys are never reused, you need lots of truly random key material, perfect synchronization between sender and reciever and secure key distribution, so is best used only for low-volume communications.
           
 **Computer algorithms**       
           
