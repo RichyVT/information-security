@@ -101,7 +101,8 @@ $ sudo ssh richard@10.0.2.15
 -  I generated a SSH keypair using the following command:
 $ ssh-keygen -t ed25519 -C "richardalfthan@hotmail.com"
 
-<img width="844" height="402" alt="image" src="https://github.com/user-attachments/assets/0c7ad505-287e-46b2-93ab-0d9b6ef90391" />                
+<img width="844" height="402" alt="image" src="https://github.com/user-attachments/assets/0c7ad505-287e-46b2-93ab-0d9b6ef90391" />        
+
 -  ed25519 is an algorithm that was used to create the keypair
 -  -C adds a comment to identify the key, I used my email account for easy identification
 -  The keypair was saved in the default location
@@ -109,13 +110,39 @@ $ ssh-keygen -t ed25519 -C "richardalfthan@hotmail.com"
 -  I then checked to see what my public key was by using the following command:
 $ cat ~/.ssh/id_ed25519.pub
 
-<img width="903" height="51" alt="image" src="https://github.com/user-attachments/assets/21490ad3-bc1a-43d4-9419-cd74b49f9632" />                  
+<img width="903" height="51" alt="image" src="https://github.com/user-attachments/assets/21490ad3-bc1a-43d4-9419-cd74b49f9632" />                      
 
 -  I then copied the public key to the server using the following command:
 $ ssh-copy-id richard@10.0.2.15
+          
 <img width="898" height="243" alt="image" src="https://github.com/user-attachments/assets/8291e07c-196e-469d-bd3e-cd93e140295a" />
 -  This gave me a prompt to "try to login to the machine using ssh 'richard@10.0.2.15' to make sure that only the key(s) I wanted were added, which I then did
-<img width="908" height="210" alt="image" src="https://github.com/user-attachments/assets/87f101ee-8e38-477a-ba27-3d34bbb1de8a" />
+          
+<img width="908" height="210" alt="image" src="https://github.com/user-attachments/assets/87f101ee-8e38-477a-ba27-3d34bbb1de8a" />          
+
+#  c) Password manager, open and cloudless. Choose a password manager that 1) works without cloud 2) is free, open source sofware. Install it. Demonstrate its use. Explain why a password manager is needed i.e. what kind of attacks or threats it protects against.
+
+-  For this task I chose KeePassXC
+-  To install it, first I did $sudo apt update to make sure everything was up to date
+
+<img width="896" height="132" alt="image" src="https://github.com/user-attachments/assets/376af955-c319-4459-b38d-017aacb8fbb9" />          
+      
+
+-  Then I used the following command to install it:        
+$ sudo apt install keepassxc            
+
+<img width="878" height="341" alt="image" src="https://github.com/user-attachments/assets/55936b7c-a4e2-4451-a555-fe297267fa0f" />          
+
+<img width="807" height="631" alt="image" src="https://github.com/user-attachments/assets/38a60646-21ff-4bdb-8f13-572cf3ef070c" />        
+
+-  I created a new database which then gave me some configuration options, what to name it, description, encryption settings       
+<img width="1471" height="631" alt="image" src="https://github.com/user-attachments/assets/9140d257-dbf0-4950-ba98-6e07a515198a" />
+
+<img width="801" height="553" alt="image" src="https://github.com/user-attachments/assets/efa2c319-bb0f-4eb2-8b6b-9ba525ac17d4" />          
+
+<img width="811" height="632" alt="image" src="https://github.com/user-attachments/assets/6c0a3fdd-5787-4d4f-aeb2-c7f61e1da45a" />
+
+
 
 
 
