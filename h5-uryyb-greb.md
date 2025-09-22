@@ -76,22 +76,23 @@ $ sudo apt install openssh-server
 $ sudo systemctl status ssh
 
 <img width="837" height="87" alt="image" src="https://github.com/user-attachments/assets/e92f07f6-06a7-43cd-be89-fc848e4429df" />          
-
+                
 And we can see it is active and running            
-
+              
 -  I then checked to see which port the SSH was listening on by using the following command:
 $ sudo ss -tlp
 <img width="867" height="96" alt="image" src="https://github.com/user-attachments/assets/a990b190-f6dc-4816-a938-47c521390c31" />
+                  
 And we can see that it is listening to port 22 (which is the default)
-
+              
 -  I then tested if SSH was working locally before trying a remote connection by using the following command:
 $ sudo localhost
 <img width="792" height="119" alt="image" src="https://github.com/user-attachments/assets/bd2bed48-0033-42c8-9a73-fd0307b032ec" />
-
+              
 -   I then found my ip address for the remote connection using the following command:
 $ sudo addr show
 <img width="886" height="340" alt="image" src="https://github.com/user-attachments/assets/d1ed9f73-81b6-473f-98a4-1dadea1ded2f" />
-
+            
 - I then connected to the ip address shown in the previous step using the following command:
 $ sudo ssh richard@10.0.2.15
 <img width="895" height="361" alt="image" src="https://github.com/user-attachments/assets/85d684d5-c314-4e84-8b01-0ba7cf5bce4d" />          
@@ -102,7 +103,7 @@ $ sudo ssh richard@10.0.2.15
 $ ssh-keygen -t ed25519 -C "richardalfthan@hotmail.com"
 
 <img width="844" height="402" alt="image" src="https://github.com/user-attachments/assets/0c7ad505-287e-46b2-93ab-0d9b6ef90391" />        
-
+              
 -  ed25519 is an algorithm that was used to create the keypair
 -  -C adds a comment to identify the key, I used my email account for easy identification
 -  The keypair was saved in the default location
@@ -111,22 +112,23 @@ $ ssh-keygen -t ed25519 -C "richardalfthan@hotmail.com"
 $ cat ~/.ssh/id_ed25519.pub
 
 <img width="903" height="51" alt="image" src="https://github.com/user-attachments/assets/21490ad3-bc1a-43d4-9419-cd74b49f9632" />                      
-
+              
 -  I then copied the public key to the server using the following command:
 $ ssh-copy-id richard@10.0.2.15
           
 <img width="898" height="243" alt="image" src="https://github.com/user-attachments/assets/8291e07c-196e-469d-bd3e-cd93e140295a" />
+                
 -  This gave me a prompt to "try to login to the machine using ssh 'richard@10.0.2.15' to make sure that only the key(s) I wanted were added, which I then did
           
 <img width="908" height="210" alt="image" src="https://github.com/user-attachments/assets/87f101ee-8e38-477a-ba27-3d34bbb1de8a" />          
-
+                  
 #  c) Password manager, open and cloudless. Choose a password manager that 1) works without cloud 2) is free, open source sofware. Install it. Demonstrate its use. Explain why a password manager is needed i.e. what kind of attacks or threats it protects against.
 
 -  For this task I chose KeePassXC
 -  To install it, first I did $sudo apt update to make sure everything was up to date
 
 <img width="896" height="132" alt="image" src="https://github.com/user-attachments/assets/376af955-c319-4459-b38d-017aacb8fbb9" />          
-      
+                      
 
 -  Then I used the following command to install it:        
 $ sudo apt install keepassxc            
@@ -141,7 +143,7 @@ $ sudo apt install keepassxc
 <img width="801" height="553" alt="image" src="https://github.com/user-attachments/assets/efa2c319-bb0f-4eb2-8b6b-9ba525ac17d4" />          
 
 <img width="811" height="632" alt="image" src="https://github.com/user-attachments/assets/6c0a3fdd-5787-4d4f-aeb2-c7f61e1da45a" />
-
+                  
 
 
 
