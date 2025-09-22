@@ -78,18 +78,18 @@ In the text there seems to be a URL: DHHP://HIYWLMYCTAIA.OWG so:
 -  D becomes A
         
 I then replaced these letters in the ciphertext which became:          
-THAT'_ IT. _O_'_E _OT OCCITICA__ _ CO_E__EA_E_! A_ _O_ _EE, _IT_E ____TIT_TIO_ CIT_E__ CA_ _E __O_E_ _IT_ C_E__E_C_ A_A___I_. _EE _O_ AT HTTP://TE_O_A_CARIA.COM   
-
+THAT'_ IT. _CO'_E ACT CCCITICA__ A CCSENEALER! A_ _CO _EE, _IT_LE _C__TIT_TIOC CIT_ER_ CAC _E _RO_EC OIT_ _RE_CEAC_ ACA_Y_I_. _EE _CO AT HTTP://TERCLARCARIACOM
+              
 From this I assumed that:
 -  B becomes S
 -  Y becomes R
-          
-  _O_'_E is probably 'you're' so        
+                    
+ _O_'_E is probably 'you're' so        
 -  K becomes Y
 -  U remains as U
 -  Y becomes R
 -  I becomes E
-
+            
 I then replaced these letters in the ciphertext which became:      
 THAT'S ET. YCU'RE ACT CFFECEAR_ A CCSESREAER! AS YCU SEE, SET_RE SC_STETSTEC CET_ERS CAC SE SRYCEC OET_ FREYCECA_ ACA_RSES. SEE YCU AT HTTP://TERC_ARCAREACCOM        
 
