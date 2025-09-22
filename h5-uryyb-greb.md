@@ -61,7 +61,75 @@ $ gpg --gen-key
 -  After verifying the intended targets key (establishing trust) it is possible for both people to communicate securely even when sent over untrusted or hostile network, such as the internet by encrypting the message at the senders end of communication, and then decrypting at the recievers end using the generated keypairs
 -  Attackers can't read the encrypted messages, and the messages are signed by the sender to verify and make sure the attackers cannot impersonate your contacts
 
-#  a)
+#  a) Install OpenSSH server, connect to it using 'ssh' client.        
+-  First I updated all operating system and applications using the following command in the terminal:          
+$ sudo apt update        
+$ sudo apt upgrade -y
+<img width="787" height="302" alt="image" src="https://github.com/user-attachments/assets/469086f6-5d87-40a8-bf68-eb4d1161a172" />
+
+-  I then installed OpenSSH server using the following command(which I forgot I already had installed:
+$ sudo apt install openssh-server
+
+<img width="797" height="179" alt="image" src="https://github.com/user-attachments/assets/7a0a3f23-5a1f-4aea-8b0a-9e92c935fb93" />          
+
+-  I then checked if whether or not the SSH service was running, it should start automatically after the system boots (and it is installed) using the following command:
+$ sudo systemctl status ssh
+
+<img width="837" height="87" alt="image" src="https://github.com/user-attachments/assets/e92f07f6-06a7-43cd-be89-fc848e4429df" />          
+
+And we can see it is active and running            
+
+-  I then checked to see which port the SSH was listening on by using the following command:
+$ sudo ss -tlp
+<img width="867" height="96" alt="image" src="https://github.com/user-attachments/assets/a990b190-f6dc-4816-a938-47c521390c31" />
+And we can see that it is listening to port 22 (which is the default)
+
+-  I then tested if SSH was working locally before trying a remote connection by using the following command:
+$ sudo localhost
+<img width="792" height="119" alt="image" src="https://github.com/user-attachments/assets/bd2bed48-0033-42c8-9a73-fd0307b032ec" />
+
+-   I then found my ip address for the remote connection using the following command:
+$ sudo addr show
+<img width="886" height="340" alt="image" src="https://github.com/user-attachments/assets/d1ed9f73-81b6-473f-98a4-1dadea1ded2f" />
+
+- I then connected to the ip address shown in the previous step using the following command:
+$ sudo ssh richard@10.0.2.15
+<img width="895" height="361" alt="image" src="https://github.com/user-attachments/assets/85d684d5-c314-4e84-8b01-0ba7cf5bce4d" />          
+
+#  b)Automate SSH connection using public keys.        
+
+-  I generated a SSH keypair using the following command:
+$ ssh-keygen -t ed25519 -C "richardalfthan@hotmail.com"
+
+<img width="844" height="402" alt="image" src="https://github.com/user-attachments/assets/0c7ad505-287e-46b2-93ab-0d9b6ef90391" />                
+-  ed25519 is an algorithm that was used to create the keypair
+-  -C adds a comment to identify the key, I used my email account for easy identification
+-  The keypair was saved in the default location
+
+-  I then checked to see what my public key was by using the following command:
+$ cat ~/.ssh/id_ed25519.pub
+
+<img width="903" height="51" alt="image" src="https://github.com/user-attachments/assets/21490ad3-bc1a-43d4-9419-cd74b49f9632" />                  
+
+-  I then copied the public key to the server using the following command:
+$ ssh-copy-id richard@10.0.2.15
+<img width="898" height="243" alt="image" src="https://github.com/user-attachments/assets/8291e07c-196e-469d-bd3e-cd93e140295a" />
+-  This gave me a prompt to "try to login to the machine using ssh 'richard@10.0.2.15' to make sure that only the key(s) I wanted were added, which I then did
+<img width="908" height="210" alt="image" src="https://github.com/user-attachments/assets/87f101ee-8e38-477a-ba27-3d34bbb1de8a" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           
 #  s) Alternative: Do either d) "Pretty Good indeed" or s) "ETAOIN": ETAOIN. Crack this ciphertext:
 
