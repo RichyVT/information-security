@@ -61,7 +61,53 @@ $ gpg --gen-key
 -  After verifying the intended targets key (establishing trust) it is possible for both people to communicate securely even when sent over untrusted or hostile network, such as the internet by encrypting the message at the senders end of communication, and then decrypting at the recievers end using the generated keypairs
 -  Attackers can't read the encrypted messages, and the messages are signed by the sender to verify and make sure the attackers cannot impersonate your contacts
 
+#  a)
+          
+#  s) Alternative: Do either d) "Pretty Good indeed" or s) "ETAOIN": ETAOIN. Crack this ciphertext:
 
+    HDMH'B TH. KWU'YI AWR WSSTOTMJJK M OWQINYIMLIY! MB KWU BII, BTGPJI BUNBHTHUHTWA OTPDIYB OMA NI NYWLIA RTHD SYIEUIAOK MAMJKBTB. BII KWU MH DHHP://HIYWLMYCTAIA.OWG        
+
+In the text there seems to be a URL: DHHP://HIYWLMYCTAIA.OWG so:
+-  D becomes H
+-  H becomes T
+-  P remains as P
+-  O becomes C
+-  W becomes O
+-  G becomes M
+-  I can assume that HDMH'B is 'THAT'S'
+-  D becomes A
+        
+I then replaced these letters in the ciphertext which became:          
+THAT'_ IT. _O_'_E _OT OCCITICA__ _ CO_E__EA_E_! A_ _O_ _EE, _IT_E ____TIT_TIO_ CIT_E__ CA_ _E __O_E_ _IT_ C_E__E_C_ A_A___I_. _EE _O_ AT HTTP://TE_O_A_CARIA.COM   
+
+From this I assumed that:
+-  B becomes S
+-  Y becomes R
+          
+  _O_'_E is probably 'you're' so        
+-  K becomes Y
+-  U remains as U
+-  Y becomes R
+-  I becomes E
+
+I then replaced these letters in the ciphertext which became:      
+THAT'S ET. YCU'RE ACT CFFECEAR_ A CCSESREAER! AS YCU SEE, SET_RE SC_STETSTEC CET_ERS CAC SE SRYCEC OET_ FREYCECA_ ACA_RSES. SEE YCU AT HTTP://TERC_ARCAREACCOM        
+
+From this I assume 
+-  ET should be IT
+-  YCU should be YOU
+-  ACT should be NOW so using this I assume
+-  E becomes I
+-  C becomes O
+-  A becomes N
+-  T becomes W
+
+So replacing most of the letters in the ciphertext, I can assume the plaintext message is:        
+
+THAT'S IT. YOU'RE NOW OFFICIALLY A CODEBREAKER! AS YOU SEE, SIMPLE SUBSTITUTION CIPHERS CAN BE BROKEN WITH FREQUENCY ANALYSIS. SEE YOU AT HTTP://TEROLARCADIA.COM
+
+    
 ## Sources
-https://mrajacse.wordpress.com/wp-content/uploads/2012/01/applied-cryptography-2nd-ed-b-schneier.pdf            
+https://mrajacse.wordpress.com/wp-content/uploads/2012/01/applied-cryptography-2nd-ed-b-schneier.pdf     
+https://en.wikipedia.org/wiki/Frequency_analysis          
 
