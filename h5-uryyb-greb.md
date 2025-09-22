@@ -146,6 +146,8 @@ $ sudo apt install keepassxc
                   
 
 
+<img width="1483" height="636" alt="image" src="https://github.com/user-attachments/assets/96ff4e83-464a-4bc6-bec4-6399b7287bef" />
+            
 
 
 
