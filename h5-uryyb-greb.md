@@ -137,14 +137,22 @@ $ sudo apt install keepassxc
 
 <img width="807" height="631" alt="image" src="https://github.com/user-attachments/assets/38a60646-21ff-4bdb-8f13-572cf3ef070c" />        
 
--  I created a new database which then gave me some configuration options, what to name it, description, encryption settings       
+-  I created a new database which then gave me some configuration options, what to name it, description, encryption settings.  It will also ask you to create a "Master password" that is needed to access the database, so it is essential that this password is both secure and memorable      
 <img width="1471" height="631" alt="image" src="https://github.com/user-attachments/assets/9140d257-dbf0-4950-ba98-6e07a515198a" />
 
 <img width="801" height="553" alt="image" src="https://github.com/user-attachments/assets/efa2c319-bb0f-4eb2-8b6b-9ba525ac17d4" />          
 
 <img width="811" height="632" alt="image" src="https://github.com/user-attachments/assets/6c0a3fdd-5787-4d4f-aeb2-c7f61e1da45a" />
                   
-
+-  Once the database is created and the configuration is complete, you can click on the entry dropdown tab, and click on "Add Entry".  Instead of typing a password, you can click on the dice icon which is KeePassXC's password generator which offers options for length, character types, and will generate a password for you, which is better than having you try to come up with your own          
+-  The generated password will be completely random and almost impossible for humans to predict or remember
+-  After adding the website URL and username, it is possible to use KeePassXC to login with the password that was added to the database.  Navigatge to the page, return to KeePassXC, select the entry and press CTRL+V and it will automatically switch back to your browser and type your username and password and let you login normally.  This eliminates the need for copying/pasting and makes sure you never manually type your password that could potentially be captured by keyloggers
+-  Since it is a cloud-free password manager, its the users responsibility to backup the password database so by saving/copying the .kdbx file to multiple locations in different computers, USB stick, external harddrives it is possible to ensure that there is always a backup available
+-  KeePassXC relies on strong cryptography (AES-256 encryption) that makes it hard to crack, e.g. brute-force attacks will be computationally expensive and even if the database is stolen, it is a massive challenge to break the encryption that is protected by the "Master password"
+-  This shifts the users security from many weak points to one strong point.  Instead of having multiple websites secure your password, I only have to protect one master password and keep my database file secure
+-  The open-source aspect provides extra security through transparency.  Unlike proprietary passowrd managers where you have to believe and trust the companys claims, KeePassXC's code can be reviewed by security professionals which provides valuable feedback and can help identify and fix any potential vulnerabilites
+-  Password managers are one of the most impactful security tools available to ordinary users.  By eliminating the need to reuse/recycle passwords and enabling truly random passwords, they provide protection against a lot of credential based attacks while making daily password use easier
+-  KeePassXC provides this protection without the need for cloud services or subscription fees, which gives the user almost complete control over their digital and online security
 
 <img width="1483" height="636" alt="image" src="https://github.com/user-attachments/assets/96ff4e83-464a-4bc6-bec4-6399b7287bef" />
             
@@ -183,7 +191,7 @@ From this I assumed that:
 -  B becomes S
 -  Y becomes R
                     
- _O_'_E is probably 'you're' so        
+-   _O_'_E is probably 'you're' so        
 -  K becomes Y
 -  U remains as U
 -  Y becomes R
@@ -208,5 +216,8 @@ THAT'S IT. YOU'RE NOW OFFICIALLY A CODEBREAKER! AS YOU SEE, SIMPLE SUBSTITUTION 
     
 ## Sources
 https://mrajacse.wordpress.com/wp-content/uploads/2012/01/applied-cryptography-2nd-ed-b-schneier.pdf     
-https://en.wikipedia.org/wiki/Frequency_analysis          
+https://en.wikipedia.org/wiki/Frequency_analysis                  
+https://keepassxc.org/        
+https://www.pcworld.com/article/2010172/keepassxc-password-manager-review.html            
+https://en.wikipedia.org/wiki/OpenSSH        
 
