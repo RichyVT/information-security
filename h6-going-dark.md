@@ -96,6 +96,12 @@ BBC - The BBC (British Broadcasting Channel) has a .onion site(mirror) where you
 <img width="1399" height="980" alt="image" src="https://github.com/user-attachments/assets/4f570bf4-5a5f-47bc-b3c2-37057ef15451" />                              
 
 
+## Sources 
+https://terokarvinen.com/information-security/                              
+https://www.torproject.org/download/                              
+https://www.eff.org/deeplinks/2014/07/7-things-you-should-know-about-tor                    
+https://dokumen.pub/hiding-behind-the-keyboard-uncovering-covert-communication-methods-with-forensic-analysis-online-ausgnbsped-9780128033401-0128033401-9780128033524-0128033525.html                                        
+
 
 
 
