@@ -30,5 +30,17 @@
 -  Only someone with the key can verify the hash value
 -  Can be created from hash functions, block encryption algorithms, or as dedicated MACs
 
+
+#  a) Install Hashcat. Test it with a sample hash. See Karvinen 2022: Cracking Passwords with Hashcat
+
+
+
+
+b) Crack this hash: d595b2086532422bbe654bc07ea030df
+
+
+
+
+
 ## Sources
 https://ia601209.us.archive.org/8/items/Applied_Cryptography_2nd_ed._B._Schneier/Applied_Cryptography_2nd_ed._B._Schneier.pdf
