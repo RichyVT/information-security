@@ -57,11 +57,12 @@ $ rm rockyou.txt.tar.gz
 <img width="850" height="481" alt="image" src="https://github.com/user-attachments/assets/17843dc3-936f-4e3f-bd2f-cfec6ccf67f9" />      
 
 -  I then installed the 'hashid' tool via pip in order to be able to identify hash ids through the terminal, using the following commands            
-$ sudo apt install python3-pip          
+$ sudo apt install python3-pip                                        
+$ sudo apt install hashid
 
+                                       
 <img width="866" height="425" alt="image" src="https://github.com/user-attachments/assets/6f24eafe-dc96-4204-b907-96698c986c44" />
-
-$ sudo apt install hashid          
+        
         
 <img width="844" height="426" alt="image" src="https://github.com/user-attachments/assets/8c6a6b03-78af-497c-a0cb-352611dabce5" />
           
@@ -73,7 +74,7 @@ $ sudo apt install hashid
 -  To crack the hash, I used the following command
 $ hashcat -m 0 '6b1628b016dff46e6fa35684be6acc96' rockyou.txt -o solved
             
--  The command means
+-  The command means                                                  
 hashcat - the hash cracking program I installed and will use          
 -m 0 - is the type of hash, which can be obtained from the hashid tool, or in this case was given to us                    
 '6b1628b016dff46e6fa35684be6acc96' - is the hash I want to crack              
