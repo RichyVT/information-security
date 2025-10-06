@@ -33,6 +33,32 @@
 
 #  a) Install Hashcat. Test it with a sample hash. See Karvinen 2022: Cracking Passwords with Hashcat
 
+-  First I updated all apps with the $ sudo apt-get update command in the terminal
+
+<img width="816" height="514" alt="image" src="https://github.com/user-attachments/assets/76536ae2-e41a-4780-b0f7-f24698f8346b" />      
+
+-  Then I installed hashcat with the following command
+$ sudo apt-get -y install hashid hashcat wget
+
+<img width="772" height="98" alt="image" src="https://github.com/user-attachments/assets/0de71f50-3d77-4561-beed-4b8cc7770d61" />        
+
+-  I then created a new directory called "hashed" for the task using the following commands
+$ mkdir hashed
+$ cd hashed
+
+<img width="433" height="59" alt="image" src="https://github.com/user-attachments/assets/33e8a600-d5bf-4874-a1ab-a2c97ec974b5" />      
+
+-  Installed the Rockyou dictionary
+$ wget https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz
+$ tar xf rockyou.txt.tar.gz
+$ rm rockyou.txt.tar.gz
+
+<img width="850" height="481" alt="image" src="https://github.com/user-attachments/assets/17843dc3-936f-4e3f-bd2f-cfec6ccf67f9" />      
+
+
+
+
+
 
 
 
