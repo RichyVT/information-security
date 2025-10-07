@@ -1,4 +1,4 @@
-# H6 February2025!
+# H7 February2025!
 
 #  x) 
 
@@ -129,5 +129,5 @@ $ hashcat -m 0 'd595b2086532422bbe654bc07ea030df' rockyou.txt -o solved
 
 ## Sources
 https://ia601209.us.archive.org/8/items/Applied_Cryptography_2nd_ed._B._Schneier/Applied_Cryptography_2nd_ed._B._Schneier.pdf
-https://terokarvinen.com/2022/cracking-passwords-with-hashcat/
+https://terokarvinen.com/2022/cracking-passwords-with-hashcat/                              
 https://hashcat.net/wiki/doku.php?id=example_hashes
